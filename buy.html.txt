@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Products | Waste to Wonder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buy.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Waste to Wonder ♻</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" id="cart-icon">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="buy-container">
+        <h2>Eco-Friendly Products</h2>
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="home">Home Decor</option>
+                <option value="fashion">Fashion</option>
+                <option value="art">Art</option>
+            </select>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Waste to Wonder. All rights reserved.</p>
+    </footer>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/buy.js"></script>
+</body>
+</html>

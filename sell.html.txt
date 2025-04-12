@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Products | Waste to Wonder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sell.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Waste to Wonder ♻</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="buy.html">Buy</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sell-container">
+        <h2>Sell Your Upcycled Items</h2>
+        
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-price">Price (₹)</label>
+                <input type="number" id="product-price" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-category">Category</label>
+                <select id="product-category" required>
+                    <option value="home">Home Decor</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="art">Art</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-description">Description</label>
+                <textarea id="product-description" rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-image">Upload Image</label>
+                <input type="file" id="product-image" accept="image/*" required>
+                <div class="image-preview" id="image-preview"></div>
+            </div>
+            
+            <button type="submit" class="btn-submit">List Product</button>
+        </form>
+        
+        <div class="my-products" id="my-products">
+            <h3>My Listed Products</h3>
+            <div class="products-list" id="products-list">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Waste to Wonder. All rights reserved.</p>
+    </footer>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/sell.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste to Wonder ♻</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Waste to Wonder ♻</div>
+            <div class="nav-links">
+                <a href="#" id="cart-icon">🛒 Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Turn Waste into <span>Wonder</span></h1>
+        <p>Buy eco-friendly products or sell your creative upcycled items</p>
+        <div class="cta-buttons">
+            <a href="buy.html" class="btn btn-buy">BUY Products</a>
+            <a href="sell.html" class="btn btn-sell">SELL Items</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Waste to Wonder. All rights reserved.</p>
+    </footer>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
